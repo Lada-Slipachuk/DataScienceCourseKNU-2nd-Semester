@@ -1,4 +1,6 @@
-> 
+## Лабораторна робота 2
+1.
+```r
 > list1 <-  list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2))
 > list1
 $observationA
@@ -13,9 +15,9 @@ $observationA
 [1] 40
 $observationB
 [1] 21
-
-
-
+```
+2.
+```r
 > lapply(list1, range)
 $observationA
 [1] 1 7
@@ -26,9 +28,9 @@ $observationB
      observationA observationB
 [1,]            1            1
 [2,]            7            6
-
-
-
+```
+3.
+```r
 > lapply(split(InsectSprays, f=InsectSprays["spray"]), function(x) mean(x$count))
 $A
 [1] 14.5
@@ -43,3 +45,4 @@ $E
 $F
 [1] 16.66667
 > 
+```

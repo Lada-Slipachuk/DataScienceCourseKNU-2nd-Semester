@@ -1,4 +1,4 @@
-## Кількість кібератак на Україну
+## Кількість кібератак на Україну 
 У 2016 році
 ```r
 > Month_of_year_2016 <- c ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")

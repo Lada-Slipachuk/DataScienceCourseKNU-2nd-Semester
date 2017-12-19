@@ -1,8 +1,6 @@
-
-
-
-
-
+## Лабораторна робота 3
+1.
+```r
 > fileURL <- "http://data.gov.ua/sites/default/files/media/document/5136/11.12.2017/perelik_ukladenyh_dogovoriv_po_rayonniy_administraciyi_zaporizkoyi_miskoyi_rady_po_hortyckomu_rayonu.xlsx"
 > download.file(fileURL, destfile = "data.xls", mode = "wb")
 trying URL 'http://data.gov.ua/sites/default/files/media/document/5136/11.12.2017/perelik_ukladenyh_dogovoriv_po_rayonniy_administraciyi_zaporizkoyi_miskoyi_rady_po_hortyckomu_rayonu.xlsx'
@@ -15,7 +13,9 @@ Error: could not find function "read.xlsx"
 ???
 
 
- 
+```
+2.
+```r
 > download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv", destfile = "data.csv")
 trying URL 'https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv'
 Content type 'text/csv' length 4246554 bytes (4.0 MB)
@@ -25,10 +25,9 @@ downloaded 4.0 MB
 > a <- lapply(values, function(x) if (!is.na(x) && x==24) TRUE else NA)
 > length(a[!is.na(a)])
 [1] 53
-
-
-
-
+```
+3.
+```r
 > url <- "http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml"
 > doc <- xmlTreeParse(url,useInternal=TRUE)
 > rootNode <- xmlRoot(doc)
